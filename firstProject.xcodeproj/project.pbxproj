@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712C309E2AA816FD00E824D3 /* ImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C309D2AA816FD00E824D3 /* ImgVC.swift */; };
+		712C30A02AA8378100E824D3 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C309F2AA8378100E824D3 /* DatePickerVC.swift */; };
 		71A240362A947F0E002A092A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A240352A947F0E002A092A /* AppDelegate.swift */; };
 		71A240382A947F0E002A092A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A240372A947F0E002A092A /* SceneDelegate.swift */; };
 		71A2403A2A947F0E002A092A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A240392A947F0E002A092A /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		71A2404D2A947F10002A092A /* firstProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2404C2A947F10002A092A /* firstProjectTests.swift */; };
 		71A240572A947F10002A092A /* firstProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A240562A947F10002A092A /* firstProjectUITests.swift */; };
 		71A240592A947F10002A092A /* firstProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A240582A947F10002A092A /* firstProjectUITestsLaunchTests.swift */; };
+		71D39B8F2AA6EEC7009E8CF7 /* red-304570_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D39B8E2AA6EEC7009E8CF7 /* red-304570_1280.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		712C309D2AA816FD00E824D3 /* ImgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgVC.swift; sourceTree = "<group>"; };
+		712C309F2AA8378100E824D3 /* DatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
 		71A240322A947F0E002A092A /* firstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A240352A947F0E002A092A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A240372A947F0E002A092A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		71A240522A947F10002A092A /* firstProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A240562A947F10002A092A /* firstProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstProjectUITests.swift; sourceTree = "<group>"; };
 		71A240582A947F10002A092A /* firstProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71D39B8E2AA6EEC7009E8CF7 /* red-304570_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-304570_1280.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		71A240342A947F0E002A092A /* firstProject */ = {
 			isa = PBXGroup;
 			children = (
+				71D39B8E2AA6EEC7009E8CF7 /* red-304570_1280.png */,
 				71A240352A947F0E002A092A /* AppDelegate.swift */,
 				71A240372A947F0E002A092A /* SceneDelegate.swift */,
 				71A240392A947F0E002A092A /* ViewController.swift */,
 				71A2403B2A947F0E002A092A /* Main.storyboard */,
+				712C309D2AA816FD00E824D3 /* ImgVC.swift */,
 				71A2403E2A947F10002A092A /* Assets.xcassets */,
 				71A240402A947F10002A092A /* LaunchScreen.storyboard */,
 				71A240432A947F10002A092A /* Info.plist */,
+				712C309F2AA8378100E824D3 /* DatePickerVC.swift */,
 			);
 			path = firstProject;
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 				71A240422A947F10002A092A /* LaunchScreen.storyboard in Resources */,
 				71A2403F2A947F10002A092A /* Assets.xcassets in Resources */,
 				71A2403D2A947F0E002A092A /* Main.storyboard in Resources */,
+				71D39B8F2AA6EEC7009E8CF7 /* red-304570_1280.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712C309E2AA816FD00E824D3 /* ImgVC.swift in Sources */,
+				712C30A02AA8378100E824D3 /* DatePickerVC.swift in Sources */,
 				71A2403A2A947F0E002A092A /* ViewController.swift in Sources */,
 				71A240362A947F0E002A092A /* AppDelegate.swift in Sources */,
 				71A240382A947F0E002A092A /* SceneDelegate.swift in Sources */,
@@ -437,6 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P74T3YL2XY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = firstProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P74T3YL2XY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = firstProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
