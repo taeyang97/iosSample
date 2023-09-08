@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var tableView: UITableView!
-    let items = ["Item 1", "Item 2", "Item 3"]
+    let items = ["imgVC", "DatePickerVC", "PickerVC", "AlertVC"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,12 +55,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             // Determine the appropriate identifier based on the selected item
             var identifier: String
             switch selectedItem {
-                case "Item 1":
+                case "imgVC":
                     identifier = "imgVC"
-                case "Item 2":
+                case "DatePickerVC":
                     identifier = "DatePickerVC"
-                case "Item 3":
-                    identifier = "viewController3"
+                case "PickerVC":
+                    identifier = "PickerVC"
+                case "AlertVC":
+                    identifier = "AlertVC"
                 default:
                     return
             }
