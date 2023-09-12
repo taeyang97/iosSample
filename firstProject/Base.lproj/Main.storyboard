@@ -4,6 +4,7 @@
     <accessibilityOverrides/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -207,7 +208,7 @@
                             </toolbar>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jKB-xt-gmt">
                                 <rect key="frame" x="186" y="480" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxe-Ro-y8P">
                                 <rect key="frame" x="11" y="59" width="319" height="34"/>
@@ -251,21 +252,12 @@
                                     <action selector="btnLoadHtmlString:" destination="Gcl-me-j0f" eventType="touchUpInside" id="xXZ-Ag-3NI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssi-Bj-9wj">
-                                <rect key="frame" x="342" y="100" width="51" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="File"/>
-                                <connections>
-                                    <action selector="btnLoadHtmlFile:" destination="Gcl-me-j0f" eventType="touchUpInside" id="Y8j-wM-iaR"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DFo-ct-dgz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="myActivityIndicator" destination="jKB-xt-gmt" id="htn-L0-2kO"/>
+                        <outlet property="indicator" destination="jKB-xt-gmt" id="PBd-d7-Au7"/>
                         <outlet property="myWebView" destination="DIc-Xa-WD1" id="fUp-Dm-inD"/>
                         <outlet property="txtUrl" destination="bxe-Ro-y8P" id="w4W-hk-szw"/>
                     </connections>
@@ -273,6 +265,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItA-Fl-2hr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6243.5114503816794" y="-2.1126760563380285"/>
+        </scene>
+        <!--Map ViewVC-->
+        <scene sceneID="cTO-m3-6hV">
+            <objects>
+                <viewController storyboardIdentifier="MapViewVC" id="jXT-7t-Vrq" customClass="MapViewVC" customModule="firstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fit-Sf-g3l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" id="O8e-Ty-RDL">
+                                <rect key="frame" x="16" y="59" width="361" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="현재위치"/>
+                                    <segment title="강동대학교"/>
+                                    <segment title="이지스퍼블리싱"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sgChangeLocation:" destination="jXT-7t-Vrq" eventType="valueChanged" id="8eo-m2-ZUQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWc-Ql-V40">
+                                <rect key="frame" x="0.0" y="98" width="393" height="637"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hw6-Br-Lkn">
+                                <rect key="frame" x="0.0" y="743" width="393" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fmI-OT-YKW">
+                                <rect key="frame" x="0.0" y="772" width="393" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="daI-11-8fr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblLocationInfo1" destination="Hw6-Br-Lkn" id="tQx-Xt-Bmv"/>
+                        <outlet property="lblLocationInfo2" destination="fmI-OT-YKW" id="t16-p1-pWR"/>
+                        <outlet property="myMap" destination="OWc-Ql-V40" id="RyL-iH-sbF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qta-hc-Xn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7319.8473282442746" y="-2.1126760563380285"/>
         </scene>
         <!--ImgVC-->
         <scene sceneID="fbG-W6-Z9a">
