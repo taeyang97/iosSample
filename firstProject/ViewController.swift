@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var tableView: UITableView!
-    let items = ["imgVC", "DatePickerVC", "PickerVC", "AlertVC", "WebViewVC", "MapViewVC", "PageControlVC", "TabBarControlVC"]
+    let items = ["imgVC", "DatePickerVC", "PickerVC", "AlertVC", "WebViewVC", "MapViewVC", "PageControlVC", "TabBarControlVC", "NavigationVC"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +71,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     identifier = "PageControlVC"
                 case "TabBarControlVC":
                     identifier = "TabBarControlVC"
+                case "NavigationVC":
+                    identifier = "NavigationVC"
                 default:
                     return
             }

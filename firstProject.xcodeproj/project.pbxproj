@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710790092AB4339500030F0E /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710790082AB4339500030F0E /* NavigationVC.swift */; };
+		7107900B2AB44EE400030F0E /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107900A2AB44EE400030F0E /* EditVC.swift */; };
 		712C309E2AA816FD00E824D3 /* ImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C309D2AA816FD00E824D3 /* ImgVC.swift */; };
 		712C30A02AA8378100E824D3 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C309F2AA8378100E824D3 /* DatePickerVC.swift */; };
 		712C30A22AA9C6D800E824D3 /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C30A12AA9C6D800E824D3 /* PickerVC.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		710790082AB4339500030F0E /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		7107900A2AB44EE400030F0E /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		712C309D2AA816FD00E824D3 /* ImgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgVC.swift; sourceTree = "<group>"; };
 		712C309F2AA8378100E824D3 /* DatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
 		712C30A12AA9C6D800E824D3 /* PickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				712C30E62AAF07CB00E824D3 /* WebViewVC.swift */,
 				712C30E82AAFF6DD00E824D3 /* MapViewVC.swift */,
 				712C30EC2AB13EFF00E824D3 /* PageControlVC.swift */,
+				710790082AB4339500030F0E /* NavigationVC.swift */,
+				7107900A2AB44EE400030F0E /* EditVC.swift */,
 			);
 			path = firstProject;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712C30A22AA9C6D800E824D3 /* PickerVC.swift in Sources */,
+				710790092AB4339500030F0E /* NavigationVC.swift in Sources */,
 				712C309E2AA816FD00E824D3 /* ImgVC.swift in Sources */,
 				712C30A02AA8378100E824D3 /* DatePickerVC.swift in Sources */,
 				71A2403A2A947F0E002A092A /* ViewController.swift in Sources */,
@@ -316,6 +323,7 @@
 				71A240382A947F0E002A092A /* SceneDelegate.swift in Sources */,
 				712C30E92AAFF6DD00E824D3 /* MapViewVC.swift in Sources */,
 				712C30E52AAAAFDC00E824D3 /* AlertVC.swift in Sources */,
+				7107900B2AB44EE400030F0E /* EditVC.swift in Sources */,
 				712C30ED2AB13EFF00E824D3 /* PageControlVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
