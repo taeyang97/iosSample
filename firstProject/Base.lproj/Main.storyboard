@@ -383,6 +383,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mW-XN-kHD">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Wr-OU-8We"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -395,6 +399,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imgView" destination="1mW-XN-kHD" id="YTG-F1-mhE"/>
                         <outlet property="txMessage" destination="mpi-5N-9B0" id="qLi-F3-8cm"/>
                     </connections>
                 </viewController>
@@ -439,6 +444,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bKn-gv-53z">
+                                <rect key="frame" x="320" y="178" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="swImageOnOff:" destination="vVN-iG-vJH" eventType="valueChanged" id="wsj-AV-f9v"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K1H-fA-sZ8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -452,6 +464,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="lblWay" destination="toK-9l-qn6" id="3qj-Yd-bxg"/>
+                        <outlet property="swIsOn" destination="bKn-gv-53z" id="uOR-Go-wfR"/>
                         <outlet property="txMessage" destination="9c8-1n-AGu" id="2js-bz-Hrd"/>
                     </connections>
                 </viewController>
@@ -544,7 +557,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ot5-Ki-tnV"/>
+        <segue reference="WTZ-e1-b71"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="light" width="128" height="128"/>
