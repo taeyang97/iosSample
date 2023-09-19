@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		710790092AB4339500030F0E /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710790082AB4339500030F0E /* NavigationVC.swift */; };
 		7107900B2AB44EE400030F0E /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107900A2AB44EE400030F0E /* EditVC.swift */; };
+		7107900D2AB83AD300030F0E /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107900C2AB83AD300030F0E /* TableVC.swift */; };
+		7107900F2AB8499200030F0E /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107900E2AB8499200030F0E /* AddVC.swift */; };
+		710790112AB849A200030F0E /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710790102AB849A200030F0E /* DetailVC.swift */; };
 		712C309E2AA816FD00E824D3 /* ImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C309D2AA816FD00E824D3 /* ImgVC.swift */; };
 		712C30A02AA8378100E824D3 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C309F2AA8378100E824D3 /* DatePickerVC.swift */; };
 		712C30A22AA9C6D800E824D3 /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C30A12AA9C6D800E824D3 /* PickerVC.swift */; };
@@ -52,6 +55,9 @@
 /* Begin PBXFileReference section */
 		710790082AB4339500030F0E /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		7107900A2AB44EE400030F0E /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
+		7107900C2AB83AD300030F0E /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
+		7107900E2AB8499200030F0E /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		710790102AB849A200030F0E /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		712C309D2AA816FD00E824D3 /* ImgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgVC.swift; sourceTree = "<group>"; };
 		712C309F2AA8378100E824D3 /* DatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
 		712C30A12AA9C6D800E824D3 /* PickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 				712C30EC2AB13EFF00E824D3 /* PageControlVC.swift */,
 				710790082AB4339500030F0E /* NavigationVC.swift */,
 				7107900A2AB44EE400030F0E /* EditVC.swift */,
+				7107900C2AB83AD300030F0E /* TableVC.swift */,
+				7107900E2AB8499200030F0E /* AddVC.swift */,
+				710790102AB849A200030F0E /* DetailVC.swift */,
 			);
 			path = firstProject;
 			sourceTree = "<group>";
@@ -318,12 +327,15 @@
 				712C309E2AA816FD00E824D3 /* ImgVC.swift in Sources */,
 				712C30A02AA8378100E824D3 /* DatePickerVC.swift in Sources */,
 				71A2403A2A947F0E002A092A /* ViewController.swift in Sources */,
+				710790112AB849A200030F0E /* DetailVC.swift in Sources */,
 				712C30E72AAF07CB00E824D3 /* WebViewVC.swift in Sources */,
 				71A240362A947F0E002A092A /* AppDelegate.swift in Sources */,
+				7107900D2AB83AD300030F0E /* TableVC.swift in Sources */,
 				71A240382A947F0E002A092A /* SceneDelegate.swift in Sources */,
 				712C30E92AAFF6DD00E824D3 /* MapViewVC.swift in Sources */,
 				712C30E52AAAAFDC00E824D3 /* AlertVC.swift in Sources */,
 				7107900B2AB44EE400030F0E /* EditVC.swift in Sources */,
+				7107900F2AB8499200030F0E /* AddVC.swift in Sources */,
 				712C30ED2AB13EFF00E824D3 /* PageControlVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
